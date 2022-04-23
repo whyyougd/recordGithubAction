@@ -1,0 +1,14 @@
+name: helloGitAction
+
+on:[push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: hello world 출력
+      run: echo Hello world!
+      -name: 디렉토리출력
+      run: ls -al
+      -name: 버전출력
+      run: java -v
